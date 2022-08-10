@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bulma.min.css">
+    <link rel="stylesheet" href="asset/css/fontawesome-all.css">
+    <link rel="stylesheet" href="asset/css/aos.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+    
+    <div class="master">
+        <header>
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-2">
+                        <a href="#" class="logo">
+                            <img src="asset/images/logo-modena.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="thank-you">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-6 has-text-centered">
+                        <h2>Terima Kasih</h2>
+                        <p>Anda telah terdaftar dalam program kami. Kami akan segera melakukan pengundian untuk menentukan pemenang program ini. Hasil undian akan kami kirimkan ke email anda</p>
+                        <a href="index.html" class="btn btn-black btn-sm">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/aos.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+        AOS.init();
+        
+        jQuery(document).ready(function($) {
+            function scrollToSection(event) {
+                event.preventDefault();
+                var $section = $($(this).attr('href')); 
+                $('html, body').animate({
+                scrollTop: $section.offset().top - 60
+                }, 1000);
+            }
+            $('.main-nav a').on('click', scrollToSection);
+            $(".main-nav a").click(function(){
+                $(".main-nav a").removeClass("active");
+                $(this).addClass("active");
+            });
+
+            //popup
+            $(".bt-popup").click(function(p){
+                p.preventDefault();
+                $(".overlay").addClass("show");
+            });
+            $(".close-bt").click(function(){
+                $(".overlay").removeClass("show");
+            });
+        }(jQuery));
+    </script>
+</body>
+</html>

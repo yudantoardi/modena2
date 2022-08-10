@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bulma.min.css">
+    <link rel="stylesheet" href="asset/css/fontawesome-all.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+    
+    <div class="master">
+        <header>
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-2">
+                        <a href="#" class="logo">
+                            <img src="asset/images/logo-modena.png" alt="">
+                        </a>
+                    </div>
+                    <div class="column is-10">
+                        <div class="main-nav">
+                            <a href="#home" class="active">HOME</a>
+                            <a href="#promo">PROMO</a>
+                            <a href="#tnc">TERMS & CONDITIONS</a>
+                        </div>
+                    </div>
+                    <div class="column is-2">&nbsp;</div>
+                </div>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="owl-carousel hero-slider">
+                <div class="item">
+                    <a href="#reg-form" class="bt-popup"><img src="asset/images/campaign-2/hero.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo pt-0 pb-0" id="promo">
+            <img src="asset/images/campaign-2/section-3.jpg" alt="">
+        </section>
+
+        <section class="bg-white" id="tnc">
+            <div class="container">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-6">
+                        <p class="lg-text" data-aos="zoom-in">
+                            Klik untuk mengetahui syarat dan kondisi dari halaman promo ini
+                        </p>
+                        <a href="#tncDt" class="btn btn-black bt-popup" data-aos="flip-down" data-aos-delay="300">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-4">
+                        <a href="#" class="logo">
+                            <img src="asset/images/logo-modena.png" alt="">
+                        </a>
+                    </div>
+                    <div class="column is-8 has-text-right">
+                        <p>Copyright &copy; Modena 2022. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="overlay" id="reg-form">
+            <div class="popup">
+
+                <div class="pic">
+                    <img class="for-mobile" src="asset/images/form-img.png" alt="">
+                    <img class="for-desktop" src="asset/images/form-img-desktop.png" alt="">
+                </div>
+                <form action="">
+                    <h3>Register</h3>
+                    <div class="inp-group">
+                        <label for="">Nama</label>
+                        <input type="text" placeholder="Contoh: John Doe">
+                    </div>
+                    <div class="inp-group">
+                        <label for="">No. Handphone</label>
+                        <input type="text" placeholder="Contoh: 085xxxxxxxxx">
+                    </div>
+                    <div class="inp-group">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Contoh: nama@yourmail.com">
+                    </div>
+                    <div class="inp-group">
+                        <label for="">Kota</label>
+                        <input type="text" placeholder="Contoh: Jakarta, Bandung, dll">
+                    </div>
+                    <div class="inp-group has-text-centered">
+                        <button class="btn btn-black">Register</button>
+                    </div>
+                </form>
+
+                <div class="close-bt"><img src="asset/images/times.png" alt=""></div>
+            </div>
+        </div>
+        <div class="overlay" id="tncDt">
+            <div class="popup">
+
+                <div class="pic">
+                    <img class="for-mobile" src="asset/images/form-img.png" alt="">
+                    <img class="for-desktop" src="asset/images/form-img-desktop.png" alt="">
+                </div>
+                <div class="article">
+                    <h3>Terms and Condition</h3>
+                    <p>Dengan menekan tombol Register, maka anda setuju dan sepakat atas hal-hal sebagai berikut:</p>
+                    <ol>
+                        <li>Syarat dan Ketentuan Fresh MODENA ini merupakan satu kesatuan yang tidak terpisahkan dari Syarat dan Ketentuan Umum yang ditetapkan oleh PT. MODENA Indonesia ("MODENA")</li>
+                        <li>Untuk tujuan kenyamanan anda, anda menyetujui bahwa MODENA dapat mengambil dan mengumpulkan informasi mengenai anda dari berbagai sumber sehingga penawaran anda terima telah disesuaikan dengan informasi dan preferensi Anda </li>
+                        <li>Anda bersedia untuk menerima penawaran dan komunikasi terkait produk-produk MODENA melalui saluran yang berbeda-beda dan Anda dapat memperbarui preferensi berlangganan Anda melalui setelan profil pribadi Anda kapan pun termasuk menggunakan fungsionalitas berhenti berlangganan untuk saluran digital yang berbeda-beda</li>
+                        <li>Apabila diperlukan, MODENA sewaktu-waktu dan/ atau secara berkala dapat melakukan pengkinian dan/ atau pembaharuan terhadap layanan dan aplikasi MODENA secara otomatis tanpa pemberitahuan atau persetujuan terlebih dahulu dari pihak manapun.</li>
+                    </ol>
+                </div>
+
+                <div class="close-bt"><img src="asset/images/times.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+
+        $(".hero-slider").owlCarousel({
+            singleItem: true,
+            pagination: true,
+            navigation: true
+        });
+        
+        jQuery(document).ready(function($) {
+            function scrollToSection(event) {
+                event.preventDefault();
+                var $section = $($(this).attr('href')); 
+                $('html, body').animate({
+                scrollTop: $section.offset().top - 60
+                }, 1000);
+            }
+            $('.main-nav a').on('click', scrollToSection);
+            $(".main-nav a").click(function(){
+                $(".main-nav a").removeClass("active");
+                $(this).addClass("active");
+            });
+
+            //popup
+            $(".bt-popup").click(function(p){
+                p.preventDefault();
+                $($(this).attr("href")).addClass("show");
+            });
+            $(".close-bt").click(function(){
+                $(".overlay").removeClass("show");
+            });
+        }(jQuery));
+    </script>
+</body>
+</html>
