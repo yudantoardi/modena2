@@ -332,6 +332,12 @@ footer p{
     line-height: 200%;
     margin-bottom: 20px;
 }
+.popup .article ul,
+.popup .article ol{
+    padding-left: 20px;
+    width: 100%;
+    float: left;
+}
 
 @media only screen and (min-width: 1720px){
     .container{
