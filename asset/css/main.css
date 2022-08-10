@@ -257,7 +257,8 @@ footer p{
     float: left;
     margin-bottom: 5px;
 }
-.inp-group input{
+.inp-group input,
+.inp-group select{
     width: 100%;
     height: 50px;
     float: left;
@@ -270,6 +271,16 @@ footer p{
 .inp-group .btn{
     margin-top: 10px;
 }
+.inp-group input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+}
+.inp-group input[type="checkbox"] ~ label{
+    width: calc(100% - 16px);
+    padding-left: 10px;
+    margin-top: -3px;
+}
+
 .popup .close-bt{
     position: absolute;
     top: 20px;
@@ -397,8 +408,9 @@ footer p{
         margin-top: 0;
     }
     .btn{
-        font-size: 16px;
-        padding: 10px 10px;
+        font-size: 12px;
+        padding: 5px 10px;
+        width: 150px;
     }
 
     .promo{
@@ -416,7 +428,14 @@ footer p{
         font-size: 16px;
     }
     p.lg-text{
-        font-size: 24px;
+        font-size: 14px;
+    }
+    section.bg-white{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    section.bg-white p{
+        margin-bottom: 20px;
     }
 
     footer{
@@ -446,10 +465,15 @@ footer p{
         width: 100%;
         height: 75%;
     }
-    .popup form{
+    .popup form,
+    .popup .article{
         width: 100%;
         padding: 40px 20px;
         overflow-y: auto;
+    }
+    .popup .article h3{
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
     .hero{
