@@ -471,6 +471,10 @@ footer p{
         padding: 40px 20px;
         overflow-y: auto;
     }
+    .popup form{
+        height: 90%;
+        overflow-y: auto;
+    }
     .popup .article h3{
         font-size: 24px;
         margin-bottom: 20px;
