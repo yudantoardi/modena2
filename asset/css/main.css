@@ -473,7 +473,7 @@ footer p{
     }
     .popup form{
         height: 90%;
-        overflow-y: auto;
+        overflow-y: auto; 
     }
     .popup .article h3{
         font-size: 24px;
