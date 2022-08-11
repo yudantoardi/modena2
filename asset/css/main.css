@@ -237,6 +237,10 @@ footer p{
     width: calc(100% - 386px);
     float: left;
 }
+.popup form{
+    height: 90%;
+    overflow-y: auto; 
+}
 .popup form h3,
 .popup .article h3{
     font-size: 32px;
@@ -470,10 +474,6 @@ footer p{
         width: 100%;
         padding: 40px 20px;
         overflow-y: auto;
-    }
-    .popup form{
-        height: 90%;
-        overflow-y: auto; 
     }
     .popup .article h3{
         font-size: 24px;
