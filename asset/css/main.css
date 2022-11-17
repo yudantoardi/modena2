@@ -361,6 +361,10 @@ footer p{
     float: left;
 }
 
+img{
+    display: block;
+}
+
 @media only screen and (min-width: 1720px){
     .container{
         max-width: 1680px;
